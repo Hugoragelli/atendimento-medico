@@ -1,25 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+:root {
+    --fonte-principal: 'Roboto Condensed', sans-serif;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-header {
-    background-color: blue;
-}
-
-.pacientes {
-    height: 100vh;
+.header-cadastro {
     width: 100%;
+    height: 5vw;
+    background-color: #fff;
+    -webkit-box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
     display: flex;
     flex-direction: row;
-
+    justify-content: start;
+    gap: 235px;
 }
 
-.cadastro__pacientes {
-    width: 35%;
+img {
+    margin-left: 50px;
 }
 
-.lista__pacientes {
+.opcoes {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    font-family: var(--fonte-principal);
+}
 
+.opcao {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.cadastro-pacientes {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.titulo {
+    margin-top: 40px;
+    font-family: var(--fonte-principal);
+}
+
+.inputs {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mb-3 {
+    font-family: var(--fonte-principal);
+}
+
+.form-group {
+    font-family: var(--fonte-principal);
 }

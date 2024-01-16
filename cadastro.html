@@ -6,54 +6,67 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="cadastro.css">
-    <title>Pacientes</title>
+    <title>Cadastro de Pacientes</title>
 </head>
-<header>
-    <h1>Teste</h1>
+<header class="header-cadastro">
+        <img src="img/logo.png">
+        <ul class="opcoes">
+            <li class="opcao">HOME</li>
+            <li class="opcao">AGENDA</li>
+            <li class="opcao">PACIENTES</li>
+            <li class="opcao">FINANCEIRO</li>
+        </ul>
 </header>
 <body>
-    <section class="pacientes">
-        <div class="cadastro__pacientes">
-            <h1>Cadastro de Pacientes</h1>
-            <div class="row">
-                <div class="col">
-                    <label class="form-label">Primeiro Nome</label>
-                    <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+        <section class="cadastro-pacientes">
+            <h1 class="titulo">Cadastro de Paciente</h1>
+            <div class="inputs">
+                <div class="mb-3">
+                    <label class="form-label">Nome Completo</label>
+                    <input type="text" class="form-control" placeholder="Nome Completo" aria-label="Primeiro Nome">
                 </div>
-                    <div class="col">
-                        <label class="form-label">Sobrenome</label>
-                      <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                <div class="mb-3">
+                    <label for="Telefone" class="form-label">Telefone</label>
+                    <input type="text" class="form-control" id="Telefone" placeholder="(99) 99999-9999">
+                </div>
+                <div class="mb-3">
+                    <label for="Email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="Email" placeholder="nome@exemplo.com">
+                </div>
+                <div class="mb-3">
+                    <label for="Endereco1" class="form-label">Endereço 1</label>
+                    <input type="text" class="form-control" id="Endereco1" placeholder="Rua Exemplo, nº 126">
+                </div>
+                <div class="mb-3">
+                    <label for="Endereco2" class="form-label">Endereço 2</label>
+                    <input type="text" class="form-control" id="Endereco2" placeholder="Apartamento 123">
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <label for="inputCity">Cidade</label>
+                        <input type="text" class="form-control" id="inputCity" placeholder="Cidade">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputEstado">Estado</label>
+                        <select id="inputEstado" class="form-control">
+                            <option selected>Escolher...</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="inputCEP">CEP</label>
+                        <input type="text" class="form-control" id="inputCEP">
                     </div>
                 </div>
-            <div class="mb-3">
-                <label for="formGroupExampleInput" class="form-label">Example label</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
-              </div>
-              <div class="mb-3">
-                <label for="formGroupExampleInput2" class="form-label">Another label</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
-              </div>
-
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Email</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <div class="mb-3">
+                    <label for="Observacoes" class="form-label">Observações:</label>
+                    <textarea class="form-control" id="Observacoes" rows="4"></textarea>
+                </div>
+                <div class="mb-3">
+                    <button type="button" class="btn btn-primary"><strong>Salvar</strong></button>
+                    <button type="button" class="btn btn-danger"><strong>Cancelar</strong></button>
+                </div>
             </div>
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Observações</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
-            </div>
-            <div class="mb-3">
-                <button type="button" class="btn btn-primary">Enviar</button>
-                <button type="button" class="btn btn-danger">Voltar</button>
-            </div>
-    
-            <div class="mx-auto" style="width: 200px;">
-                <p>Parágrafo final centralizado</p>
-            </div>
-        </div>
-        
-        <div class="lista__pacientes"></div>
-
-    </section>
+        </section>
 </body>
 </html>
